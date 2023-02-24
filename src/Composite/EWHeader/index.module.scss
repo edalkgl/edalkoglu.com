@@ -1,0 +1,41 @@
+.container {
+  position: sticky;
+  top: 0;
+  background: #000;
+  z-index: 1500;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+  }
+}
+
+:is(.logo, .menuList) {
+  display: flex;
+}
+
+.logo {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+
+  span {
+    color: #fd481d;
+  }
+}
+
+.menuList {
+  display: grid;
+  grid-gap: 2rem;
+  grid-auto-flow: column;
+
+  .item {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+  }
+}

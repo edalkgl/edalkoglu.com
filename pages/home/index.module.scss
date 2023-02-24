@@ -1,0 +1,96 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(to bottom, #c1c9de33, #fff);
+}
+
+.infoSection {
+  padding: 5rem 0;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .avatarSide {
+    background: #fff;
+    padding: 0.5rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .resumeSide {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .badgeSide {
+    display: flex;
+    font-size: 14px;
+    background: #5562ff;
+    color: #fff;
+    padding: 0.6rem 1.3rem;
+    font-weight: 700;
+    border-radius: 25px;
+    margin-bottom: 1.5rem;
+  }
+  .titleSide {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .linkSide {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    .btn {
+      color: #fff;
+      background: #fc481d;
+      padding: 0.7rem 1.2rem;
+    }
+  }
+
+  .socialTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .sectionSocialList {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      background: #d6d6d6;
+      padding: 0.8rem;
+      border-radius: 50%;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      .icon {
+        color: black;
+      }
+      .text {
+        display: none;
+      }
+    }
+  }
+}
