@@ -62,11 +62,11 @@ const HomePage = () => {
                       <span className={styles.text}>LinkedIn</span>
                     </EWLink>
                     <EWLink
-                      href={Base.Email}
+                      href={`mailto:${Base.Email}`}
                       className={styles.item}
                       target={'_blank'}>
                       <IconBrandEmail className={styles.icon} />
-                      <span className={styles.text}>Email</span>
+                      <span className={styles.text}>{Base.Email}</span>
                     </EWLink>
                   </div>
                 </div>
