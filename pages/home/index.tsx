@@ -32,7 +32,7 @@ const HomePage = () => {
                   />
                   <h1 className={styles.resumeSide}>Hi, I'm Eda Lökoğlu</h1>
                   <span className={styles.badgeSide}>Front-End Developer</span>
-                  <h4 className={styles.titleSide}>
+                  <div className={styles.textSide}>
                     I have been improving my skills by working in the Front-End
                     field since 2021. I closely follow the latest technologies
                     and trends in the sector and I enjoy exploring new tools and
@@ -40,7 +40,8 @@ const HomePage = () => {
                     development process more efficient. I am excited to continue
                     my development in this field and contribute to innovative
                     projects.
-                  </h4>
+                  </div>
+
                   <div className={styles.linkSide}>
                     <EWButton className={styles.btn}>Hire Me</EWButton>
                   </div>
