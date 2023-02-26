@@ -1,4 +1,4 @@
-import HomePage from "./home";
+import HomePage from './home';
 
 const RootPage = () => {
   return <HomePage />;

@@ -1,18 +1,22 @@
 import styles from './index.module.scss';
 
-import { IconBrandGithub } from '@/src/Assets/IconBrandGithub';
-import IconBrandLinkedin from '@/src/Assets/IconBrandLinkedin';
-import IconBrandEmail from '@/src/Assets/IconBrandEmail';
-import EWButton from '@/src/Components/EWButton';
-import EWImage from '@/src/Components/EWImage';
-import EWLink from '@/src/Components/EWLink';
-import EWHeader from '@/src/Composite/EWHeader';
+import {
+  IconBrandEmail,
+  IconBrandGithub,
+  IconBrandLinkedin
+} from '@/src/Assets';
+import { EWHeader } from '@/src/Composite';
 import AppLayout from '@/src/Layout/applayout';
+import { EWImage, EWLink } from '@/src/Components';
 import { Base } from '@/src/Constants/base';
+import Head from 'next/head';
 
 const HomePage = () => {
   return (
     <AppLayout>
+      <Head>
+        <title>{Base.Title}</title>
+      </Head>
       <EWHeader />
       <main className={styles.main}>
         <section className={styles.infoSection}>
@@ -25,12 +29,12 @@ const HomePage = () => {
                     src={
                       'https://cdn-w1.netlify.app/other/2023/11/15/1650966138041.jpeg'
                     }
-                    alt={'Eda Lökoğlu'}
+                    alt={Base.Title}
                     width={150}
                     height={150}
                     priority
                   />
-                  <h1 className={styles.resumeSide}>Hi, I'm Eda Lökoğlu</h1>
+                  <h1 className={styles.resumeSide}>Eda Lökoğlu</h1>
                   <span className={styles.badgeSide}>Front-End Developer</span>
                   <div className={styles.textSide}>
                     I have been improving my skills by working in the Front-End
@@ -42,30 +46,39 @@ const HomePage = () => {
                     projects.
                   </div>
 
-                  <div className={styles.linkSide}>
-                    <EWButton className={styles.btn}>Hire Me</EWButton>
-                  </div>
                   <h4 className={styles.socialTitle}>Social Accounts</h4>
                   <div className={styles.sectionSocialList}>
                     <EWLink
                       href={Base.GitHub}
                       className={styles.item}
                       target={'_blank'}>
-                      <IconBrandGithub className={styles.icon} />
+                      <IconBrandGithub
+                        className={styles.icon}
+                        width={20}
+                        height={20}
+                      />
                       <span className={styles.text}>GitHub</span>
                     </EWLink>
                     <EWLink
                       href={Base.Linkedin}
                       className={styles.item}
                       target={'_blank'}>
-                      <IconBrandLinkedin className={styles.icon} />
+                      <IconBrandLinkedin
+                        className={styles.icon}
+                        width={20}
+                        height={20}
+                      />
                       <span className={styles.text}>LinkedIn</span>
                     </EWLink>
                     <EWLink
                       href={`mailto:${Base.Email}`}
                       className={styles.item}
                       target={'_blank'}>
-                      <IconBrandEmail className={styles.icon} />
+                      <IconBrandEmail
+                        className={styles.icon}
+                        width={20}
+                        height={20}
+                      />
                       <span className={styles.text}>{Base.Email}</span>
                     </EWLink>
                   </div>
@@ -75,7 +88,6 @@ const HomePage = () => {
           </div>
         </section>
       </main>
-      {/* <EWFooter /> */}
     </AppLayout>
   );
 };

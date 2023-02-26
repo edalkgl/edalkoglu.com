@@ -1,7 +1,7 @@
-import styles from "./index.module.scss";
+import styles from './index.module.scss';
 
-import EWLink from "@/src/Components/EWLink";
-import { PageLink } from "@/src/Constants/base";
+import { PageLink } from '@/src/Constants/base';
+import { EWLink } from '@/src/Components';
 
 const EWHeader = () => {
   return (
@@ -17,6 +17,12 @@ const EWHeader = () => {
               <div className={styles.menuList}>
                 <EWLink href={PageLink.Blog} className={styles.item}>
                   Blog
+                </EWLink>
+                <EWLink
+                  href={PageLink.Resume}
+                  className={styles.item}
+                  target={'_blank'}>
+                  Resume
                 </EWLink>
                 <EWLink href={PageLink.Projects} className={styles.item}>
                   Projects

@@ -1,6 +1,7 @@
-import styles from "./index.module.scss";
-import cn from "classnames";
-import Image from "next/image";
+import cn from 'clsx';
+import styles from './index.module.scss';
+
+import Image from 'next/image';
 
 interface IProps {
   alt: string;
@@ -8,10 +9,19 @@ interface IProps {
   width?: number | undefined;
   height?: number | undefined;
   className?: string | undefined;
+  quality?: number | undefined;
   priority?: boolean | undefined;
 }
 
-const EWImage = ({ alt, src, width, height, priority, className }: IProps) => {
+const EWImage = ({
+  alt,
+  src,
+  width,
+  height,
+  quality,
+  priority,
+  className
+}: IProps) => {
   return (
     <picture className={cn(styles.container, className)}>
       <Image
@@ -19,6 +29,7 @@ const EWImage = ({ alt, src, width, height, priority, className }: IProps) => {
         alt={alt}
         width={width}
         height={height}
+        quality={quality}
         priority={priority}
       />
     </picture>

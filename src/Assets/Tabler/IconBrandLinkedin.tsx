@@ -1,4 +1,4 @@
-import { IAssets } from './types';
+import { IAssets } from '@/src/Shared/types';
 
 const IconBrandLinkedin = (props: IAssets) => {
   return (

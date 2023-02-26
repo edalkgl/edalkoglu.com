@@ -2,11 +2,10 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: linear-gradient(to bottom, #c1c9de33, #fff);
 }
 
 .infoSection {
-  padding: 5rem 0;
+  padding: 3rem 0;
 
   .wrapper {
     display: flex;
@@ -15,18 +14,17 @@
     align-items: center;
   }
   .avatarSide {
-    background: #fff;
     padding: 0.5rem;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 1rem;
+    box-shadow: 0 0 6px #0003;
 
     img {
       border-radius: 50%;
     }
   }
-
   .resumeSide {
     font-size: 3rem;
     font-weight: 600;
@@ -36,35 +34,22 @@
   .badgeSide {
     display: flex;
     font-size: 14px;
-    background: #5562ff;
+    background: var(--app-primary);
     color: #fff;
     padding: 0.6rem 1.3rem;
-    font-weight: 700;
+    font-weight: 400;
     border-radius: 25px;
-    margin-bottom: 1.5rem;
   }
   .textSide {
     line-height: 1.5rem;
     text-align: justify;
+    margin: 3rem 0;
   }
-  .linkSide {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3rem;
-
-    .btn {
-      color: #fff;
-      background: #fc481d;
-      padding: 0.7rem 1.2rem;
-    }
-  }
-
   .socialTitle {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 2rem;
   }
-
   .sectionSocialList {
     display: flex;
     justify-content: space-between;
@@ -75,8 +60,8 @@
       flex-direction: column;
       text-align: center;
       align-items: center;
-      background: #d6d6d6;
-      padding: 0.8rem;
+      background: #d7d7d7;
+      padding: 0.6rem;
       border-radius: 50%;
 
       &:hover {
