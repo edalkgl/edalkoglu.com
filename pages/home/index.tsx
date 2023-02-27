@@ -46,7 +46,7 @@ const HomePage = () => {
                     projects.
                   </div>
 
-                  <h4 className={styles.socialTitle}>Social Accounts</h4>
+                  <h2 className={styles.socialTitle}>Social Accounts</h2>
                   <div className={styles.sectionSocialList}>
                     <EWLink
                       href={Base.GitHub}
