@@ -8,13 +8,15 @@ interface IProps {
   href: string;
   children?: React.ReactNode;
   target?: string;
+  ariaLabel?: string;
 }
 
-const EWLink = ({ className, href, children, target }: IProps) => {
+const EWLink = ({ className, href, children, target, ariaLabel }: IProps) => {
   return (
     <Link
       href={href}
       target={target}
+      aria-label={ariaLabel}
       className={cn(styles.container, className)}>
       {children}
     </Link>
