@@ -7,6 +7,7 @@ export const enum PageLink {
 
 export const enum Base {
   Title = 'Eda Lökoğlu',
+  Job = 'Front-End Developer',
   Email = 'edalkoglu@gmail.com',
   Linkedin = 'https://www.linkedin.com/in/edalkoglu',
   GitHub = 'https://github.com/edalkgl'
