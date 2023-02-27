@@ -16,7 +16,7 @@ const HomePage = () => {
     <AppLayout>
       <Head>
         <title>{Base.Title}</title>
-        <meta name="description" content={Base.Job}></meta>
+        <meta name="description" content={Base.Job} />
       </Head>
       <EWHeader />
       <main className={styles.main}>
