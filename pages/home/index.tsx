@@ -16,6 +16,7 @@ const HomePage = () => {
     <AppLayout>
       <Head>
         <title>{Base.Title}</title>
+        <meta name="description">{Base.Job}</meta>
       </Head>
       <EWHeader />
       <main className={styles.main}>
@@ -34,8 +35,8 @@ const HomePage = () => {
                     height={150}
                     priority
                   />
-                  <h1 className={styles.resumeSide}>Eda Lökoğlu</h1>
-                  <span className={styles.badgeSide}>Front-End Developer</span>
+                  <h1 className={styles.resumeSide}>{Base.Title}</h1>
+                  <span className={styles.badgeSide}>{Base.Job}</span>
                   <div className={styles.textSide}>
                     I have been improving my skills by working in the Front-End
                     field since 2021. I closely follow the latest technologies
