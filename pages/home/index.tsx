@@ -51,18 +51,21 @@ const HomePage = () => {
                     <EWLink
                       href={Base.GitHub}
                       className={styles.item}
-                      target={'_blank'}>
+                      target={'_blank'}
+                      ariaLabel={'GitHub'}>
                       <IconBrandGithub
                         className={styles.icon}
                         width={20}
                         height={20}
                       />
+
                       <span className={styles.text}>GitHub</span>
                     </EWLink>
                     <EWLink
                       href={Base.Linkedin}
                       className={styles.item}
-                      target={'_blank'}>
+                      target={'_blank'}
+                      ariaLabel={'Linkedin'}>
                       <IconBrandLinkedin
                         className={styles.icon}
                         width={20}
@@ -73,7 +76,8 @@ const HomePage = () => {
                     <EWLink
                       href={`mailto:${Base.Email}`}
                       className={styles.item}
-                      target={'_blank'}>
+                      target={'_blank'}
+                      ariaLabel={'E-mail'}>
                       <IconBrandEmail
                         className={styles.icon}
                         width={20}
