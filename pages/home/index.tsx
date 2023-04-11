@@ -39,7 +39,7 @@ const HomePage = () => {
                   <span className={styles.badgeSide}>{Base.Job}</span>
                   <div className={styles.textSide}>
                     I have been improving my skills by working in the Front-End
-                    field since 2021. I closely follow the latest technologies
+                    field since 2019. I closely follow the latest technologies
                     and trends in the sector and I enjoy exploring new tools and
                     techniques to improve the user experience and make the
                     development process more efficient. I am excited to continue
