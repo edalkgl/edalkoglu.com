@@ -28,7 +28,7 @@ const HomePage = () => {
                   <EWImage
                     className={styles.avatarSide}
                     src={
-                      'https://cdn-w1.netlify.app/other/2023/11/15/1650966138041.jpeg'
+                      'https://avatars.githubusercontent.com/u/69504823'
                     }
                     alt={Base.Title}
                     width={150}
